@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gana tu espacio</title>
+    <meta name="description" content="Grafiti & Arte urbano mexicano" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#111" />
+    <meta name="msapplication-TileColor" content="#111" />
+    <meta property="og:title" content="Gana tu espacio" />
+    <meta property="og:description" content="Grafiti & Arte urbano mexicano" />
+    <meta property="og:image" content="/images/preview.es.1200x630.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image" content="/images/preview.es.630x630.jpg" />
+    <meta property="og:image:width" content="630" />
+    <meta property="og:image:height" content="630" />
+    <style>
+      body {
+        background-color: #000;
+        color: #777;
+        margin: 0;
+        font-family: Tahoma, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-attachment: fixed;
+      }
+
+      header {
+        width: 100%;
+        margin-bottom: 3%;
+      }
+
+      .controls {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(100% - 1.4em);
+        margin: 1em auto 1.6em;
+      }
+
+      .controls__left {
+        flex: 0 1 10%;
+      }
+
+      .controls__center {
+        text-align: center;
+      }
+
+      .controls__right {
+        flex: 0 0 10%;
+        text-align: right;
+      }
+
+      .trailer {
+        width: 100%;
+        max-height: 100vh;
+        aspect-ratio: 16 / 9;
+      }
+
+      nav ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        overflow: hidden;
+        flex-wrap: wrap;
+        list-style: none;
+      }
+
+      /* Insert separator between items unless wrapped */
+      nav li {
+        margin-right: 2px;
+        position: relative;
+      }
+
+      nav li:after {
+        content: '';
+        right: 100%;
+        top: 0.9em;
+        width: 1px;
+        height: 0.6em;
+        background-color: #333;
+        margin-right: 1px;
+        display: inline-block;
+        position: absolute;
+        transform: translateY(-50%);
+      }
+
+      nav a {
+        padding: 0 0.6em;
+        font-size: 1.3em;
+      }
+
+      a {
+        color: #777;
+        text-decoration: none;
+      }
+
+      a.selected {
+        cursor: default;
+        pointer-events: none;
+      }
+
+      a:not(.selected):hover {
+        color: #ddd;
+      }
+
+      .icon {
+        width: 2.3em;
+        display: inline-block;
+      }
+
+      /* Use footer background if screen is high enough to not clash with header */
+      @media screen and (max-width: 640px) and (min-height: calc((86 + 146)*(100vw/640))) {
+        body {
+          background-image: url('/images/footer.640.webp');
+        }
+      }
+
+      @media screen and (max-width: 1008px) and (min-height: calc((135 + 229)*(100vw/1008))) {
+        body {
+          background-image: url('/images/footer.1008.webp');
+        }
+      }
+
+      @media screen and (min-width: 1009px) and (min-height: calc((258 + 437)*(100vw/1920))) {
+        body {
+          background-image: url('/images/footer.1920.webp');
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <picture>
+          <source
+            srcset="
+              /images/header.es.640.webp   640w,
+              /images/header.es.1008.webp 1008w,
+              /images/header.es.1920.webp 1920w
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
+              /images/header.es.640.jpg   640w,
+              /images/header.es.1008.jpg 1008w,
+              /images/header.es.1920.jpg 1920w
+            "
+            type="image/jpeg"
+          />
+          <img
+            src="/images/header.es.1920.jpg"
+            srcset="
+              /images/header.es.640.jpg   640w,
+              /images/header.es.1008.jpg 1008w,
+              /images/header.es.1920.jpg 1920w
+            "
+            alt="Gana tu espacio | Grafiti & Arte urbano mexicano"
+          />
+        </picture>
+        <div class="controls">
+          <div class="controls__left">&nbsp;</div>
+          <div class="controls__center">
+            <nav>
+              <ul>
+                <li><a href="/">english</a></li>
+                <li><a class="selected" href="/es">español</a></li>
+                <li><a href="/cs">česky</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="controls__right">
+            <a
+              title="Página de Facebook"
+              class="icon"
+              href="https://facebook.com/ganatuespaciodoc"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  fill="currentColor"
+                  d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="trailer">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/aZEsKBo_-Zs"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            width="100%"
+            height="100%"
+          ></iframe>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>

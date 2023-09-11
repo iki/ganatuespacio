@@ -120,6 +120,41 @@
         display: inline-block;
       }
 
+      .awards {
+        margin: 1.6em 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 13px;
+      }
+
+      .awards picture {
+        flex: 0 0 auto;
+      }
+
+      .awards picture img {
+        height: 150px;
+      }
+
+      @media screen and (max-width: 640px) {
+        .awards picture img {
+          height: 75px;
+        }
+      }
+
+      @media screen and (min-width: 641px) and (max-width: 1008px) {
+        .awards picture img {
+          height: 100px;
+        }
+      }
+
+      @media screen and (min-width: 1009px) and (max-width: 1600px) {
+        .awards picture img {
+          height: 120px;
+        }
+      }
+
       /* Use footer background if screen is high enough to not clash with header */
       /*
       @media screen and (max-width: 640px) and (min-height: calc((86 + 146)*(100vw/640))) {
@@ -219,6 +254,64 @@
             width="100%"
             height="100%"
           ></iframe>
+        </div>
+        <div class="awards">
+          <picture>
+            <source src="/images/awards/01-brno.webp" type="image/webp" />
+            <img src="/images/awards/01-brno.jpg" alt="Brno" />
+          </picture>
+          <picture>
+            <source src="/images/awards/02-kosice.webp" type="image/webp" />
+            <img src="/images/awards/02-kosice.jpg" alt="Košice" />
+          </picture>
+          <picture>
+            <source src="/images/awards/03-rome.webp" type="image/webp" />
+            <img src="/images/awards/03-rome.jpg" alt="Rome" />
+          </picture>
+          <picture>
+            <source src="/images/awards/04-ukraine.webp" type="image/webp" />
+            <img src="/images/awards/04-ukraine.jpg" alt="" />
+          </picture>
+          <picture>
+            <source src="/images/awards/05-hamburg.webp" type="image/webp" />
+            <img src="/images/awards/05-hamburg.jpg" alt="" />
+          </picture>
+          <picture>
+            <source src="/images/awards/06-bucurest.webp" type="image/webp" />
+            <img src="/images/awards/06-bucurest.jpg" alt="" />
+          </picture>
+          <picture>
+            <source src="/images/awards/07-greece.webp" type="image/webp" />
+            <img src="/images/awards/07-greece.jpg" alt="" />
+          </picture>
+          <picture>
+            <source src="/images/awards/08-barcelona.webp" type="image/webp" />
+            <img src="/images/awards/08-barcelona.jpg" alt="" />
+          </picture>
+          <picture>
+            <source src="/images/awards/09-lulea.webp" type="image/webp" />
+            <img src="/images/awards/09-lulea.jpg" alt="" />
+          </picture>
+          <picture>
+            <source src="/images/awards/10-stockholm.webp" type="image/webp" />
+            <img src="/images/awards/10-stockholm.jpg" alt="" />
+          </picture>
+          <picture>
+            <source src="/images/awards/11-arizona.webp" type="image/webp" />
+            <img src="/images/awards/11-arizona.jpg" alt="" />
+          </picture>
+          <picture>
+            <source src="/images/awards/12-bogota.webp" type="image/webp" />
+            <img src="/images/awards/12-bogota.jpg" alt="" />
+          </picture>
+          <picture>
+            <source src="/images/awards/13-new-york.webp" type="image/webp" />
+            <img src="/images/awards/13-new-york.jpg" alt="" />
+          </picture>
+          <picture>
+            <source src="/images/awards/14-ukraine.webp" type="image/webp" />
+            <img src="/images/awards/14-ukraine.jpg" alt="" />
+          </picture>
         </div>
       </main>
       <footer>

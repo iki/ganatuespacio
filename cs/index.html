@@ -25,22 +25,21 @@
     <style>
       body {
         background-color: #000;
-        color: #777;
+        color: #ddd;
         margin: 0;
         font-family: Tahoma, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100vh;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: left bottom;
-        background-attachment: fixed;
       }
 
       header {
         width: 100%;
         margin-bottom: 3%;
+      }
+
+      main {
+        width: 96%;
+        margin: 0 auto;
+        font-size: 1.1em;
+        text-align: center;
       }
 
       .controls {
@@ -105,8 +104,12 @@
       }
 
       a {
-        color: #777;
+        color: #aaa;
         text-decoration: none;
+      }
+
+      header a {
+        color: #777;
       }
 
       a.selected {
@@ -123,12 +126,14 @@
         display: inline-block;
       }
 
-      .about {
-        margin: 1.6em auto;
-        width: 80%;
-        color: #ddd;
-        font-size: 1.1em;
+      .text {
+        margin: 2.618em auto;
+        max-width: 1200px;
         text-align: center;
+      }
+
+      .text-next {
+        margin-top: 0.618em !important;
       }
 
       .credits {
@@ -146,8 +151,14 @@
         flex-shrink: 0.5;
       }
 
+      .festivals p {
+        margin-block: 0 0.5em;
+        margin-inline: 0 0.5em;
+        font-size: 0.9em;
+      }
+
       .awards {
-        margin: 1.6em 10px;
+        margin-top: 2.6em;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -275,6 +286,7 @@
           </div>
         </div>
       </header>
+
       <main>
         <div class="trailer">
           <iframe
@@ -286,6 +298,7 @@
             height="100%"
           ></iframe>
         </div>
+
         <div class="awards">
           <picture>
             <source src="/images/awards/01-brno.webp" type="image/webp" />
@@ -344,7 +357,8 @@
             <img src="/images/awards/14-ukraine.jpg" alt="" />
           </picture>
         </div>
-        <div class="about">
+
+        <div class="text">
           <div class="credits">
             <picture>
               <source src="/images/photo-karolina.webp" type="image/webp" />
@@ -393,7 +407,271 @@
             projektu Ježíš táhne na Berlín.
           </p>
         </div>
+
+        <picture>
+          <source src="/images/tag.webp" type="image/webp" />
+          <img src="/images/tag.jpg" alt="" />
+        </picture>
+
+        <br />
+
+        <picture>
+          <source src="/images/native.webp" type="image/webp" />
+          <img src="/images/native.jpg" alt="" />
+        </picture>
+
+        <br />
+
+        <picture>
+          <source
+            srcset="
+              /images/artists.600.webp 600w,
+              /images/artists.900.webp 900w
+            "
+            sizes="70vw"
+            type="image/webp"
+          />
+          <source
+            srcset="/images/artists.600.jpg 600w, /images/artists.900.jpg 900w"
+            sizes="70vw"
+            type="image/jpeg"
+          />
+          <img
+            src="/images/artists.900.jpg"
+            srcset="/images/artists.600.jpg 600w, /images/artists.900.jpg 900w"
+            sizes="70vw"
+            alt=""
+          />
+        </picture>
+
+        <div class="text text-next">
+          <p>
+            <a target="_blank" href="https://instagram.com/adrydelrocio"
+              >@adrydelrocio</a
+            >,
+            <a target="_blank" href="https://instagram.com/@alanizart"
+              >@alanizart</a
+            >,
+            <a target="_blank" href="https://instagram.com/@alegriadelprado"
+              >@alegriadelprado</a
+            >,
+            <a target="_blank" href="https://instagram.com/@areuz_">@areuz_</a>,
+            <a target="_blank" href="https://instagram.com/@aztlanunderground"
+              >@aztlanunderground</a
+            >,
+            <a target="_blank" href="https://instagram.com/@jesusbenitezf"
+              >@jesusbenitezf</a
+            >,
+            <a target="_blank" href="https://instagram.com/@biosisniega"
+              >@biosisniega</a
+            >,
+            <a target="_blank" href="https://instagram.com/@blasto_">@blasto_</a
+            >,
+            <a target="_blank" href="https://instagram.com/@chaz_bojorquez"
+              >@chaz_bojorquez</a
+            >,
+            <a target="_blank" href="https://instagram.com/@cixmugre_dmt"
+              >@cixmugre_dmt</a
+            >,
+            <a target="_blank" href="https://instagram.com/@colt1328"
+              >@colt1328</a
+            >,
+            <a target="_blank" href="https://instagram.com/@dangerakoficial"
+              >@dangerakoficial</a
+            >,
+            <a target="_blank" href="https://instagram.com/@dexpierte_colectivo"
+              >@dexpierte_colectivo</a
+            >,
+            <a target="_blank" href="https://instagram.com/@el_vuh">@el_vuh</a>,
+            <a target="_blank" href="https://instagram.com/@eptosuno"
+              >@eptosuno</a
+            >,
+            <a target="_blank" href="https://instagram.com/@feymwn1_cvs"
+              >@feymwn1_cvs</a
+            >,
+            <a target="_blank" href="https://instagram.com/@_friek">@_friek</a>,
+            <a target="_blank" href="https://instagram.com/@gatobanton"
+              >@gatobanton</a
+            >,
+            <a target="_blank" href="https://instagram.com/@gilnavor"
+              >@gilnavor</a
+            >,
+            <a target="_blank" href="https://instagram.com/@holookunz"
+              >@holookunz</a
+            >,
+            <a target="_blank" href="https://instagram.com/@horus_tierra"
+              >@horus_tierra</a
+            >,
+            <a target="_blank" href="https://instagram.com/@humone_sf"
+              >@humone_sf</a
+            >,
+            <a target="_blank" href="https://instagram.com/@lapiztola"
+              >@lapiztola</a
+            >,
+            <a target="_blank" href="https://instagram.com/@laryza_garcía"
+              >@laryza_garcía</a
+            >,
+            <a target="_blank" href="https://instagram.com/@letteringmalandro"
+              >@letteringmalandro</a
+            >,
+            <a target="_blank" href="https://instagram.com/@libre_hem"
+              >@libre_hem</a
+            >,
+            <a
+              target="_blank"
+              href="https://instagram.com/@mare.advertencia.lirika"
+              >@mare.advertencia.lirika</a
+            >,
+            <a target="_blank" href="https://instagram.com/@maricealmanza"
+              >@maricealmanza</a
+            >,
+            <a target="_blank" href="https://instagram.com/@markogarx"
+              >@markogarx</a
+            >,
+            <a target="_blank" href="https://instagram.com/@maxbarrera"
+              >@maxbarrera</a
+            >,
+            <a target="_blank" href="https://instagram.com/@_mazatli_"
+              >@_mazatli_</a
+            >,
+            <a target="_blank" href="https://instagram.com/@minoz._">@minoz._</a
+            >,
+            <a target="_blank" href="https://instagram.com/@mutante_apc"
+              >@mutante_apc</a
+            >,
+            <a target="_blank" href="https://instagram.com/@nobunagalewing"
+              >@nobunagalewing</a
+            >,
+            <a target="_blank" href="https://instagram.com/@raza.de.polvo"
+              >@raza.de.polvo</a
+            >,
+            <a target="_blank" href="https://instagram.com/@ricardoangelesss"
+              >@ricardoangelesss</a
+            >,
+            <a target="_blank" href="https://instagram.com/@rocopachucote"
+              >@rocopachucote</a
+            >,
+            <a target="_blank" href="https://instagram.com/@saidokins"
+              >@saidokins</a
+            >,
+            <a target="_blank" href="https://instagram.com/@saner_edgar"
+              >@saner_edgar</a
+            >,
+            <a target="_blank" href="https://instagram.com/@seherone"
+              >@seherone</a
+            >,
+            <a target="_blank" href="https://instagram.com/@serkofu">@serkofu</a
+            >,
+            <a target="_blank" href="https://instagram.com/@shenterismo"
+              >@shenterismo</a
+            >,
+            <a target="_blank" href="https://instagram.com/@sketchoficial"
+              >@sketchoficial</a
+            >,
+            <a target="_blank" href="https://instagram.com/@smitheone"
+              >@smitheone</a
+            >,
+            <a target="_blank" href="https://instagram.com/@spaik45">@spaik45</a
+            >,
+            <a target="_blank" href="https://instagram.com/@spanerock"
+              >@spanerock</a
+            >,
+            <a target="_blank" href="https://instagram.com/@stinkfishstink"
+              >@stinkfishstink</a
+            >,
+            <a target="_blank" href="https://instagram.com/@unikbreakers"
+              >@unikbreakers</a
+            >,
+            <a target="_blank" href="https://instagram.com/@yatikafields"
+              >@yatikafields</a
+            >,
+            <a target="_blank" href="https://instagram.com/@yorkhardest"
+              >@yorkhardest</a
+            >
+          </p>
+
+          <br />
+          <br />
+
+          <div class="festivals">
+            <p>
+              Marzo 17, 2023: San Luis Potosí, Mexico, Al Estilo Femenino
+              grafiti festival
+            </p>
+            <p>
+              April 21, 2023: Brno International Film Festival, Czech Republic -
+              Grand Prix Best Feature Documentary
+            </p>
+            <p>
+              April 24, 2023: Kosice International Film Festival, Slovak
+              Republic - Honorable Mention Feature Documentary
+            </p>
+            <p>
+              April 29, 2023: Belfast, Northern Ireland, Hit the North street
+              art festival
+            </p>
+            <p>
+              May 12, 2023: Hip Hop Cine Fest, Rome, Italy - Official Selection
+              Feature Documentary
+            </p>
+            <p>
+              May 2023: Onyko Films Awards, Odessa, Ucraine - Finalist Best
+              Documentary Feature Film
+            </p>
+            <p>
+              May 31, 2023: Praha, Česká Republika, Kulturní centrum Klubovna -
+              Povaleč
+            </p>
+            <p>July 25, 2023: Bánská Bystrica, Slovensko, Outbreak Europe</p>
+            <p>
+              July 2023: Lulea International Film Festival, Sweden - Finalist
+              Best Debut Documentary
+            </p>
+            <p>
+              July 2023: Athens International Monthly Art Festival, Greece -
+              Honorable Mention Best Art/Dance Film
+            </p>
+            <p>
+              August 7, 2023: Best International Film Festival, Bucharest,
+              Romania - Grand Prix Best Documentary
+            </p>
+            <p>
+              Summer edition 2023: Barcelona Indie Awards, Spain - Official
+              Selection Best Feature Documentary
+            </p>
+            <p>
+              August, 2023: New York Monthly Film Festival, USA - Official
+              Selection Best Feature Documentary
+            </p>
+            <p>
+              August 17, 2023: Stockholm City Film Festival, Sweden - Winner
+              Award Best Woman Filmmaker
+            </p>
+            <p>
+              September 3, 2023: Oprto, Portugal - The Worldbattle breaking
+              competition
+            </p>
+            <p>
+              September 5, 2023: Narrar El Futuro, Colombia, Bogota, Official
+              Selection Stories of the Future Films
+            </p>
+            <p>
+              September 15, 2023: Golden Sneakers International Hip Hop Film
+              Festival, Hamburg, Germany<br />
+              - Grand Prix Best Graffiti Movie
+            </p>
+            <p>
+              September 30, 2023: V.I.Z. Film Fest, Odesa Ucraine - Official
+              Selection Best Feature Documentary
+            </p>
+            <p>
+              October 19, 2023: Mesa International Film Festival, Arizona, USA -
+              Official Selection Documentary
+            </p>
+          </div>
+        </div>
       </main>
+
       <footer>
         <!-- FIXME: Fix the `100vw - 20px` hack to make page wider when vertical scrollbar is displayed -->
         <picture>

@@ -128,10 +128,19 @@
         text-align: center;
       }
 
-      .about p:first-child {
+      .credits {
         color: #eee;
         font-size: 1.3em;
-        /* letter-spacing: 0.15em; */
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        letter-spacing: 0.05em;
+        gap: 1em;
+      }
+
+      .credits p {
+        flex-shrink: 0.5;
       }
 
       .awards {
@@ -328,11 +337,21 @@
           </picture>
         </div>
         <div class="about">
-          <p>
-            GANA TU ESPACIO, 77 min, 2023<br />
-            dirección: Karolína Alvarez<br />
-            original music: Ondřej Skala / JTNB
-          </p>
+          <div class="credits">
+            <picture>
+              <source src="/images/photo-karolina.webp" type="image/webp" />
+              <img src="/images/photo-karolina.jpg" alt="Karolína Alvarez" />
+            </picture>
+            <p>
+              GANA&nbsp;TU&nbsp;ESPACIO, 77&nbsp;min,&nbsp;2023<br />
+              dirección: Karolína&nbsp;Alvarez<br />
+              original&nbsp;music: Ondřej&nbsp;Skala&nbsp;/&nbsp;JTNB
+            </p>
+            <picture>
+              <source src="/images/photo-ondrej.webp" type="image/webp" />
+              <img src="/images/photo-ondrej.jpg" alt="Ondřej Skala" />
+            </picture>
+          </div>
 
           <p>
             El primer documental largometraje de arte urbano y grafiti mexicano

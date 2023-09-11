@@ -121,15 +121,22 @@
       }
 
       /* Use footer background if screen is high enough to not clash with header */
+      /*
       @media screen and (max-width: 640px) and (min-height: calc((86 + 146)*(100vw/640))) {
         body {
           background-image: url('/images/footer.640.webp');
         }
+        footer {
+          min-height: calc(13px + 146 * 100vw / 640);
+        }
       }
 
-      @media screen and (max-width: 1008px) and (min-height: calc((135 + 229)*(100vw/1008))) {
+      @media screen and (min-width: 641px) and (max-width: 1008px) and (min-height: calc((135 + 229)*(100vw/1008))) {
         body {
           background-image: url('/images/footer.1008.webp');
+        }
+        footer {
+          min-height: calc(13px + 229 * 100vw / 1008);
         }
       }
 
@@ -137,7 +144,11 @@
         body {
           background-image: url('/images/footer.1920.webp');
         }
+        footer {
+          min-height: calc(13px + 437 * 100vw / 1920);
+        }
       }
+      */
     </style>
   </head>
 
@@ -210,7 +221,35 @@
           ></iframe>
         </div>
       </main>
-      <footer></footer>
+      <footer>
+        <picture>
+          <source
+            srcset="
+              /images/footer.640.webp   640w,
+              /images/footer.1008.webp 1008w,
+              /images/footer.1920.webp 1920w
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
+              /images/footer.640.jpg   640w,
+              /images/footer.1008.jpg 1008w,
+              /images/footer.1920.jpg 1920w
+            "
+            type="image/jpeg"
+          />
+          <img
+            src="/images/footer.1920.jpg"
+            srcset="
+              /images/footer.640.jpg   640w,
+              /images/footer.1008.jpg 1008w,
+              /images/footer.1920.jpg 1920w
+            "
+            alt="Gana tu espacio | Grafiti & Arte urbano mexicano"
+          />
+        </picture>
+      </footer>
     </div>
   </body>
 </html>

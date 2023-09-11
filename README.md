@@ -24,17 +24,26 @@ Requirements: [Git](https://git-scm.com/downloads), [Node.js](https://nodejs.org
 
 ### Editing
 
-1. Paste the [prompt](./prompt.md) to Codeium sidebar in your editor
+1. Edit [`index.html`](./index.html)
+2. Check the result in your browser
+3. If any changes are needed, repeat from step 1
+4. Update localized versions
+
+### Editing via LLM
+
+1. Edit the [prompt](./prompt.md) and paste it to Codeium sidebar in your editor
 2. Replace [`index.html`](./index.html) content with the generated output
 3. Check the result in your browser
 4. If any changes are needed, update the prompt in Codeium sidebar and repeat from step 2
+5. Update the [prompt](./prompt.md) to match the last Codeium prompt from step 4
+6. Update localized versions
 
 ### Submitting changes
 
 1. Make sure that the site works locally as expected
 2. Make sure that all content files are updated:
 
-   - `prompt.md` - updated prompt
+   - `prompt.md` - updated LLM prompt (if used)
    - `index.html` - generated webpage (`en`)
    - `es/index.html` - generated webpage (`es`)
    - `cs/index.html` - generated webpage (`cs`)

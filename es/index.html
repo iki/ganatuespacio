@@ -213,6 +213,8 @@
   <body>
     <div class="container">
       <header>
+        <!-- FIXME: Fix the `100vw - 20px` hack to make page wider when vertical scrollbar is displayed -->
+
         <picture>
           <source
             srcset="
@@ -220,6 +222,7 @@
               /images/header.es.1008.webp 1008w,
               /images/header.es.1920.webp 1920w
             "
+            sizes="calc(100vw - 20px)"
             type="image/webp"
           />
           <source
@@ -228,6 +231,7 @@
               /images/header.es.1008.jpg 1008w,
               /images/header.es.1920.jpg 1920w
             "
+            sizes="calc(100vw - 20px)"
             type="image/jpeg"
           />
           <img
@@ -237,6 +241,7 @@
               /images/header.es.1008.jpg 1008w,
               /images/header.es.1920.jpg 1920w
             "
+            sizes="calc(100vw - 20px)"
             alt="Gana tu espacio | Grafiti & Arte urbano mexicano"
           />
         </picture>
@@ -393,6 +398,7 @@
         </div>
       </main>
       <footer>
+        <!-- FIXME: Fix the `100vw - 20px` hack to make page wider when vertical scrollbar is displayed -->
         <picture>
           <source
             srcset="
@@ -400,6 +406,7 @@
               /images/footer.1008.webp 1008w,
               /images/footer.1920.webp 1920w
             "
+            sizes="calc(100vw - 20px)"
             type="image/webp"
           />
           <source
@@ -408,6 +415,7 @@
               /images/footer.1008.jpg 1008w,
               /images/footer.1920.jpg 1920w
             "
+            sizes="calc(100vw - 20px)"
             type="image/jpeg"
           />
           <img
@@ -417,6 +425,7 @@
               /images/footer.1008.jpg 1008w,
               /images/footer.1920.jpg 1920w
             "
+            sizes="calc(100vw - 20px)"
             alt="Gana tu espacio | Grafiti & Arte urbano mexicano"
           />
         </picture>

@@ -213,6 +213,7 @@
   <body>
     <div class="container">
       <header>
+        <!-- FIXME: Fix the `100vw - 20px` hack to make page wider when vertical scrollbar is displayed -->
         <picture>
           <source
             srcset="
@@ -220,6 +221,7 @@
               /images/header.en.1008.webp 1008w,
               /images/header.en.1920.webp 1920w
             "
+            sizes="calc(100vw - 20px)"
             type="image/webp"
           />
           <source
@@ -228,6 +230,7 @@
               /images/header.en.1008.jpg 1008w,
               /images/header.en.1920.jpg 1920w
             "
+            sizes="calc(100vw - 20px)"
             type="image/jpeg"
           />
           <img
@@ -237,6 +240,7 @@
               /images/header.en.1008.jpg 1008w,
               /images/header.en.1920.jpg 1920w
             "
+            sizes="calc(100vw - 20px)"
             alt="Take your space | Mexican graffiti and urban art"
           />
         </picture>
@@ -391,6 +395,7 @@
         </div>
       </main>
       <footer>
+        <!-- FIXME: Fix the `100vw - 20px` hack to make page wider when vertical scrollbar is displayed -->
         <picture>
           <source
             srcset="
@@ -398,6 +403,7 @@
               /images/footer.1008.webp 1008w,
               /images/footer.1920.webp 1920w
             "
+            sizes="calc(100vw - 20px)"
             type="image/webp"
           />
           <source
@@ -406,6 +412,7 @@
               /images/footer.1008.jpg 1008w,
               /images/footer.1920.jpg 1920w
             "
+            sizes="calc(100vw - 20px)"
             type="image/jpeg"
           />
           <img
@@ -415,6 +422,7 @@
               /images/footer.1008.jpg 1008w,
               /images/footer.1920.jpg 1920w
             "
+            sizes="calc(100vw - 20px)"
             alt="Take your space | Mexican graffiti and urban art"
           />
         </picture>
